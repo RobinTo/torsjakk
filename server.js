@@ -47,5 +47,5 @@ function messageClients(msg){
 }
 var aWss = expressWs.getWss('/chess');
 
-var port = prociess.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 app.listen(port)
