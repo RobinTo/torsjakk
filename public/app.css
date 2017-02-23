@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+
+#status{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#reset{
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background: lightgray;
+    border: 1px solid black;
+    border-radius: 4px;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#board{
+    display: inline-block;
+}
+
+#pgn{
+    visibility: hidden;
+}
+#fen{
+    visibility: hidden;
+}
