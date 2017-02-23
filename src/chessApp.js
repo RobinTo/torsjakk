@@ -71,7 +71,7 @@ function onDrop(source, target) {
 };
 
 function init(){
-    chessSocket = new WebSocket("ws://localhost:3000/chess", "protocolOne");
+    chessSocket = new WebSocket("ws://"+window.location.hostname+"/chess", "protocolOne");
     game = new Chess();
     statusEl = $('#status');
     fenEl = $('#fen');
