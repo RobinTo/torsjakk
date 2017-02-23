@@ -2234,7 +2234,8 @@ function onDrop(source, target) {
 };
 
 function init(){
-    chessSocket = new WebSocket("ws://localhost:3000/chess", "protocolOne");
+    var host = window.location.hostname + (!!window.location.port ? ':' + window.location.port : '');
+    chessSocket = new WebSocket("ws://"+host+"/chess", "protocolOne");
     game = new Chess();
     statusEl = $('#status');
     fenEl = $('#fen');
